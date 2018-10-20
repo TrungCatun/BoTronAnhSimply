@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BoTronAnhSimply" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="U5a-LI-q7c">
+                                <rect key="frame" x="67" y="149" width="240" height="370"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OgJ-S5-WmV" customClass="CustomView" customModule="BoTronAnhSimply" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="58"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Coe-SZ-s4r" customClass="CustomView" customModule="BoTronAnhSimply" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="78" width="240" height="58"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-LH-lwd" customClass="CustomView" customModule="BoTronAnhSimply" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="156" width="240" height="58"/>
+                                        <color key="backgroundColor" red="0.18149000430000001" green="1" blue="0.25942354639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aeq-BF-PU7" customClass="CustomView" customModule="BoTronAnhSimply" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="234" width="240" height="58"/>
+                                        <color key="backgroundColor" red="1" green="0.61357747750000002" blue="0.046540198390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHB-Q9-La1" customClass="CustomView" customModule="BoTronAnhSimply" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="312" width="240" height="58"/>
+                                        <color key="backgroundColor" red="0.96903097490000001" green="1" blue="0.15367008339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="height" secondItem="Coe-SZ-s4r" secondAttribute="height" identifier="1:1" id="0vi-Oc-INd"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="width" secondItem="CHB-Q9-La1" secondAttribute="width" identifier="1:1" id="7MH-4U-qVH"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="width" secondItem="NbX-LH-lwd" secondAttribute="width" identifier="1:1" id="CYM-Nl-Sn3"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="width" secondItem="Coe-SZ-s4r" secondAttribute="width" identifier="1:1" id="G5N-bP-3MP"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="width" secondItem="Aeq-BF-PU7" secondAttribute="width" identifier="1:1" id="PAN-Gr-ZlH"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="height" secondItem="NbX-LH-lwd" secondAttribute="height" identifier="1:1" id="WyI-u7-hZL"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="height" secondItem="Aeq-BF-PU7" secondAttribute="height" id="jY4-YS-cZ3"/>
+                                    <constraint firstItem="OgJ-S5-WmV" firstAttribute="height" secondItem="CHB-Q9-La1" secondAttribute="height" id="xI6-AN-J3i"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U5a-LI-q7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6aa-yA-YNG"/>
+                            <constraint firstItem="U5a-LI-q7c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="I27-R2-aiH"/>
+                            <constraint firstItem="U5a-LI-q7c" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ksx-jt-EAN"/>
+                            <constraint firstItem="U5a-LI-q7c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="WtY-ni-YJv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="OgJ-S5-WmV" id="Auf-F1-mNT"/>
+                        <outlet property="view2" destination="Coe-SZ-s4r" id="iwa-iJ-zIA"/>
+                        <outlet property="view3" destination="NbX-LH-lwd" id="rbG-h9-IGa"/>
+                        <outlet property="view4" destination="Aeq-BF-PU7" id="zU5-9a-WBg"/>
+                        <outlet property="view5" destination="CHB-Q9-La1" id="iAn-SZ-HVN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
